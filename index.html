@@ -498,9 +498,68 @@
         </div>
 
       </div>
+ </section>
+ <section class="value_proposition py-12">
+  <div class="px-5 max-w-[1500px] mx-auto">
+    <div class="value_content">
 
+      <div
+        class="flex flex-col md:flex-row items-stretch overflow-hidden rounded-[50px] bg-black border border-gray-200 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+      >
+        <!-- Left Side (Fixed Width) -->
+        <div class="relative md:w-[680px] h-full place-self-center">
+          <img
+            class="object-cover w-full h-full rounded-[50px]"
+            src="./images/funfact-image.jpg"
+            alt="Fun Fact Image"
+          />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <a
+              href="#"
+             class="h-[120px] w-[120px] flex items-center justify-center rounded-full border-2 border-black bg-white/30 backdrop-blur-xl text-black text-lg font-bold hover:scale-105 transition duration-300 ease-in-out shadow-lg"
 
-  </section>
+            >
+              Play
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side (Text area) -->
+        <div class="flex-1 flex flex-col justify-center text-white text-left px-[60px] py-[80px]">
+          <h2 class="text-[80px] font-bold leading-tight mb-6">
+            AI-powered that <br />
+            streamline tasks
+          </h2>
+          <p class="text-xl leading-relaxed text-white mb-10 max-w-[700px]">
+            As your business grows or your AI SaaS needs change, you can <br />
+            easily adjust your subscription level to match those needs.
+            <br />This flexibility ensures that AI remains an asset.
+          </p>
+
+          <div class="h-px bg-white/10 mb-10"></div>
+
+          <div class="counter flex flex-wrap gap-16">
+            <div>
+              <p class="flex items-end gap-1 text-9xl font-bold text-red-600 leading-none">
+                <span class="number__count mr-1">92</span>
+                <i class="fa-solid fa-percent text-9xl"></i>
+              </p>
+              <p class="text-xl mt-2 text-white">Customer service inquiries</p>
+            </div>
+            <div>
+              <p class="flex items-end gap-1 text-9xl font-bold text-red-600 leading-none">
+                <span class="number__count mr-1">75</span>
+                <i class="fa-solid fa-percent text-9xl"></i>
+              </p>
+              <p class="text-xl mt-2 text-white">Using financial institutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -510,6 +569,14 @@
     integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+     <script src="./libs/count-up/jquery.countup.min.js"></script>
+
+  <script>
+    $('.number__count').countUp();
+  </script>
+  
+  <script src="./libs/wowjs/wow.min.js">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper(".mySwiper", {
